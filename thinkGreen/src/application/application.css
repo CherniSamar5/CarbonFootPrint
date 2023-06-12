@@ -1,0 +1,82 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.voiture_container {
+	-fx-background-image: url("./index.jpg");
+	-fx-background-position: cover;
+	
+}
+
+.btn {
+	-fx-background-color: #698F3F;
+	-fx-border-radius: 6px;
+	-fx-background-radius: 6px;
+	-fx-cursor: hand;
+}
+
+.btn:hover {
+	-fx-background-color: #FFF;
+	-fx-text-fill: #698F3F;
+	-fx-border-color: #698F3F;
+}
+
+.login-btn {
+	    -fx-background-color: linear-gradient(to bottom, green, #007200, #008D00) !important;
+			-fx-border-radius: 6px;
+	-fx-background-radius: 6px;
+	-fx-cursor: hand;
+	
+}
+
+.login-btn:hover {
+	-fx-background-color: #FFF !important;
+	-fx-text-fill: linear-gradient(to bottom, green, #007200, #008D00) !important;
+	-fx-border-color: linear-gradient(to bottom, green, #007200, #008D00) !important;
+}
+
+.create-account-title {
+		-fx-text-fill: linear-gradient(to bottom, green, #007200, #008D00) !important;
+	-fx-alignment: center;
+}
+
+.create-account-inputs {
+		-fx-border-color: linear-gradient(to bottom, green, #007200, #008D00) !important;
+}
+
+.update-btn {
+	-fx-text-fill: linear-gradient(to bottom, green, #007200, #008D00) !important;
+    -fx-background-color: white !important;
+	-fx-border-radius: 6px;
+	-fx-background-radius: 6px;
+	-fx-border-color: linear-gradient(to bottom, green, #007200, #008D00) !important;
+	
+	-fx-cursor: hand;
+	
+}
+
+.update-btn:hover {
+	-fx-text-fill: white;
+    -fx-background-color: linear-gradient(to bottom, green, #007200, #008D00) !important;
+	-fx-text-fill: white !important;
+	-fx-border-color: linear-gradient(to bottom, green, #007200, #008D00) !important;
+}
+
+.acceuil {
+	    -fx-background-color: linear-gradient(to bottom, white, green);
+}
+
+.acceuil-btns {
+	-fx-text-fill: white;
+    -fx-background-color: transparent !important;
+	-fx-border-radius: 6px;
+	-fx-background-radius: 6px;
+	-fx-border-color: white !important;
+	-fx-cursor: hand;
+}
+
+.acceuil-btns:hover { 
+	-fx-text-fill: linear-gradient(to bottom, green, #007200, #008D00) !important;
+    -fx-background-color: white !important;
+}
+
+
+
+

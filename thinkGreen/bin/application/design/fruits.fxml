@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="422.0" prefWidth="734.0" style="-fx-background-color: white; -fx-border-color: #9CB071; -fx-border-style: solid;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controllers.FruitsController">
+   <children>
+      <AnchorPane layoutX="71.0" layoutY="56.0" prefHeight="400.0" prefWidth="223.0">
+         <children>
+            <ImageView fitHeight="81.0" fitWidth="124.0" layoutX="56.0">
+               <image>
+                  <Image url="@../../../../../Downloads/816dcc925a14ec91bc2258b883090c93-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="81.0" fitWidth="113.0" layoutX="67.0" layoutY="89.0">
+               <image>
+                  <Image url="@../../../../../Downloads/1-19948_single-fruits-images-png-transparent-png-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="94.0" fitWidth="113.0" layoutX="67.0" layoutY="177.0">
+               <image>
+                  <Image url="@../../../../../Downloads/pomme-large-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="94.0" fitWidth="113.0" layoutX="67.0" layoutY="271.0">
+               <image>
+                  <Image url="@../../../../../Downloads/dm9nozptxwipjinfajumnxzmznqobukp6qeystcghrkyrdoz64ld9l2vy0f2tjig--removebg-preview.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <ComboBox fx:id="typeFruitsComboBox" layoutX="451.0" layoutY="87.0" prefHeight="27.0" prefWidth="238.0" style="-fx-border-color: green; -fx-border-radius: 4px; -fx-background-color: white;">
+         <effect>
+            <Glow />
+         </effect>
+      </ComboBox>
+      <Label layoutX="309.0" layoutY="87.0" prefHeight="27.0" prefWidth="124.0" text="Type">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></Label>
+      <Label layoutX="295.0" layoutY="145.0" prefHeight="20.0" prefWidth="150.0" text="Consommation (G/7J)">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></Label>
+      <TextField fx:id="consommationField" layoutX="451.0" layoutY="139.0" prefHeight="31.0" prefWidth="238.0" promptText="Consommation (G/7J)" style="-fx-background-color: white; -fx-border-color: green; -fx-border-radius: 4px;">
+         <effect>
+            <Glow />
+         </effect>
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="resultTextField" layoutX="475.0" layoutY="275.0" prefHeight="34.0" prefWidth="213.0" promptText="L'empreinte Du CO2 (G)" style="-fx-background-color: white; -fx-border-color: green; -fx-border-radius: 4px;">
+         <effect>
+            <Glow />
+         </effect>
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="306.0" layoutY="282.0" prefHeight="20.0" prefWidth="162.0" text="Consommation Carbone">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></Label>
+      <Button fx:id="calculateButton" layoutX="295.0" layoutY="205.0" mnemonicParsing="false" onAction="#calculate" prefHeight="42.0" prefWidth="394.0" styleClass="login-btn" stylesheets="@../application.css" text="calculate" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></Button>
+      <Button fx:id="solutionButton" layoutX="295.0" layoutY="333.0" mnemonicParsing="false" onAction="#solution" prefHeight="42.0" prefWidth="383.0" styleClass="login-btn" stylesheets="@../application.css" text="Solution" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Button>
+      <AnchorPane layoutX="-7.0" layoutY="50.0" prefHeight="372.0" prefWidth="124.0" style="-fx-background-color: green;" />
+      <Button fx:id="backBtn" layoutX="-7.0" layoutY="-6.0" mnemonicParsing="false" onAction="#back" prefHeight="40.0" prefWidth="124.0" styleClass="login-btn" stylesheets="@../application.css" text="&lt;---" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="81.0" fitWidth="113.0" layoutX="632.0" layoutY="-6.0">
+         <image>
+            <Image url="@../../../../../Downloads/png-transparent-think-green-illustration-environmentally-friendly-environmental-protection-euclidean-natural-environment-caring-for-the-earth-text-label-logo-removebg-preview.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="616.0" prefWidth="878.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controllers.ElectronicController">
+   <children>
+      <AnchorPane layoutX="-4.0" layoutY="430.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="191.0" prefWidth="884.0" style="-fx-background-color: green;">
+         <children>
+            <Label layoutX="296.0" layoutY="46.0" prefHeight="94.0" prefWidth="551.0" stylesheets="@../application.css" text="Footprint Caused By Electronics" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="36.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="183.0" fitWidth="304.0" layoutX="-25.0" layoutY="3.0">
+               <image>
+                  <Image url="@../../../../../Downloads/CO2-removebg-preview.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="-1.0" prefHeight="437.0" prefWidth="898.0" style="-fx-padding: 25;">
+         <children>
+            <Label layoutX="90.0" layoutY="64.0" prefHeight="27.0" prefWidth="157.0" text="Electronic Type">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="typeElectronicComboBow" layoutX="328.0" layoutY="64.0" prefHeight="26.0" prefWidth="412.0" />
+            <Label layoutX="90.0" layoutY="123.0" prefHeight="27.0" prefWidth="218.0" text="Duration of use (H/Day)">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="duree" layoutX="329.0" layoutY="124.0" prefHeight="26.0" prefWidth="412.0" promptText="Duration Of Use In Hours" />
+            <Button fx:id="calculateBtn" layoutX="61.0" layoutY="186.0" mnemonicParsing="false" onAction="#calculate" prefHeight="39.0" prefWidth="780.0" styleClass="login-btn" stylesheets="@../application.css" text="Calculate" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Button>
+            <Label layoutX="90.0" layoutY="254.0" prefHeight="27.0" prefWidth="230.0" text="CO2 Footprint Per Day (G)">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="footPrintPerDayField" layoutX="329.0" layoutY="254.0" prefHeight="26.0" prefWidth="412.0" promptText="Duration Of Use In Hours" />
+            <Label layoutX="90.0" layoutY="310.0" prefHeight="27.0" prefWidth="230.0" text="CO2 Footprint Per Year (G)">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="footPrintPerYearField" layoutX="328.0" layoutY="310.0" prefHeight="26.0" prefWidth="412.0" promptText="Duration Of Use In Hours" />
+            <Button fx:id="solutionBtn" layoutX="61.0" layoutY="374.0" mnemonicParsing="false" onAction="#solution" prefHeight="39.0" prefWidth="780.0" styleClass="login-btn" stylesheets="@../application.css" text="Solution" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="backBtn" layoutX="-5.0" layoutY="-6.0" mnemonicParsing="false" onAction="#back" prefHeight="26.0" prefWidth="132.0" styleClass="login-btn" stylesheets="@../application.css" text="&lt;---" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="82.0" fitWidth="92.0" layoutX="781.0" layoutY="-7.0">
+               <image>
+                  <Image url="@../../../../../Downloads/png-transparent-think-green-illustration-environmentally-friendly-environmental-protection-euclidean-natural-environment-caring-for-the-earth-text-label-logo-removebg-preview.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="592.0" prefWidth="816.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controllers.FoodController">
+   <children>
+      <AnchorPane layoutX="489.0" layoutY="58.0" prefHeight="247.0" prefWidth="250.0" style="-fx-border-radius: 10px; -fx-background-radius: 10px; -fx-background-color: white;">
+         <effect>
+            <DropShadow height="122.08" radius="61.75" width="126.92">
+               <color>
+                  <Color opacity="0.08586625754833221" />
+               </color>
+            </DropShadow>
+         </effect>
+         <children>
+            <Button fx:id="legumesBtn" layoutX="9.0" layoutY="190.0" mnemonicParsing="false" onAction="#legumes" prefHeight="42.0" prefWidth="230.0" styleClass="login-btn" stylesheets="@../application.css" text="Vegetables" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="159.0" fitWidth="219.0" layoutX="9.0" layoutY="6.0">
+               <image>
+                  <Image url="@../../../../../Downloads/i185280-legumes-avec-des-calories-removebg-preview.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="172.0" layoutY="58.0" prefHeight="247.0" prefWidth="250.0" style="-fx-border-radius: 10px; -fx-background-radius: 10px; -fx-background-color: white;">
+         <children>
+            <Button fx:id="viandesBtn" alignment="CENTER" layoutX="11.0" layoutY="190.0" mnemonicParsing="false" onAction="#viandes" prefHeight="42.0" prefWidth="230.0" styleClass="login-btn" stylesheets="@../application.css" text="Meats" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="159.0" fitWidth="219.0" layoutX="9.0" layoutY="7.0">
+               <image>
+                  <Image url="@../../../../../Downloads/zeo-viandes-1-removebg-preview.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="172.0" layoutY="324.0" prefHeight="247.0" prefWidth="250.0" style="-fx-border-radius: 10px; -fx-background-radius: 10px; -fx-background-color: white;">
+         <effect>
+            <DropShadow height="44.85" radius="21.387500000000003" width="42.7">
+               <color>
+                  <Color opacity="0.08966565132141113" />
+               </color>
+            </DropShadow>
+         </effect>
+         <children>
+            <Button fx:id="fruitsBtn" layoutX="11.0" layoutY="190.0" mnemonicParsing="false" onAction="#fruits" prefHeight="42.0" prefWidth="219.0" styleClass="login-btn" stylesheets="@../application.css" text="Fruits" textFill="WHITE">
+               <opaqueInsets>
+                  <Insets left="50.0" />
+               </opaqueInsets>
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="159.0" fitWidth="219.0" layoutX="13.0" layoutY="14.0">
+               <image>
+                  <Image url="@../../../../../Downloads/pexels-jane-doan-1132047-removebg-preview.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="489.0" layoutY="324.0" prefHeight="247.0" prefWidth="250.0" style="-fx-border-radius: 10px; -fx-background-radius: 10px; -fx-background-color: white;">
+         <effect>
+            <DropShadow height="44.85" radius="21.387500000000003" width="42.7">
+               <color>
+                  <Color opacity="0.08966565132141113" />
+               </color>
+            </DropShadow>
+         </effect>
+         <children>
+            <Button fx:id="graisseBtn" layoutX="11.0" layoutY="190.0" mnemonicParsing="false" onAction="#graisse" prefHeight="42.0" prefWidth="230.0" styleClass="login-btn" stylesheets="@../application.css" text="Alimentary Fats" textFill="WHITE">
+               <opaqueInsets>
+                  <Insets left="50.0" />
+               </opaqueInsets>
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="159.0" fitWidth="202.0" layoutX="25.0" layoutY="14.0">
+               <image>
+                  <Image url="@../../../../../Downloads/Huile-beurre-comparaison-benefice-sante-head-removebg-preview.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="-3.0" layoutY="51.0" prefHeight="542.0" prefWidth="166.0" style="-fx-background-color: green;" />
+      <Button fx:id="backBtn" layoutX="-3.0" layoutY="-11.0" mnemonicParsing="false" onAction="#back" prefHeight="50.0" prefWidth="166.0" styleClass="login-btn" stylesheets="@../application.css" text="&lt;---" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="72.0" fitWidth="98.0" layoutX="731.0">
+         <image>
+            <Image url="@../../../../../Downloads/png-transparent-think-green-illustration-environmentally-friendly-environmental-protection-euclidean-natural-environment-caring-for-the-earth-text-label-logo-removebg-preview.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
